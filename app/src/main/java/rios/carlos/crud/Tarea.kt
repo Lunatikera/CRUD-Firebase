@@ -6,6 +6,10 @@ data class Tarea(
     var descripcion: String="")
 {
     fun toMap(): Map<String, String>{
-        return mapOf("titulo" to titulo, "descripcion" to descripcion)
+        return mapOf(
+            "id" to id,
+            "titulo" to titulo,
+            "descripcion" to descripcion
+        )
     }
 }
